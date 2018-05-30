@@ -12,5 +12,8 @@ class MainActivity{
         Log.e("LOG_TAG","simon finish this action")
     }
 
+    fun dev_featural_action2(){
+        Log.e("LOG_TAG","franky finish acion2")
+    }
 }
 
