@@ -8,5 +8,8 @@ class MainActivity{
         Log.e("LOG_TAG","this is develop branch")
     }
 
+    fun feature_3Branch(){
+        Log.e("LOG_TAG","hollo world")
+    }
 }
 
