@@ -11,5 +11,9 @@ class MainActivity{
     fun breach(){
         Log.e("LOG_TAG","this is develop branch")
     }
+
+    fun breach2(){
+        Log.e("LOG_TAG","this is develop branch")
+    }
 }
 
