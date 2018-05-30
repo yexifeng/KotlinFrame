@@ -8,5 +8,9 @@ class MainActivity{
         Log.e("LOG_TAG","this is develop branch")
     }
 
+    fun dev_featural3(){
+        Log.e("LOG_TAG","meek finish action3")
+    }
+
 }
 
