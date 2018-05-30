@@ -19,5 +19,9 @@ class MainActivity{
     fun dev_featural3(){
         Log.e("LOG_TAG","meek finish action3")
     }
+
+    fun dev_featural4(){
+        Log.e("LOG_TAG","john agrea to commit")
+    }
 }
 
