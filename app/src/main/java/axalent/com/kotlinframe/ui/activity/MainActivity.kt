@@ -10,5 +10,8 @@ class MainActivity{
 
     }
 
+    fun feature_3Branch(){
+        Log.e("LOG_TAG","hollo world")
+    }
 }
 
