@@ -8,7 +8,5 @@ class MainActivity{
         Log.e("LOG_TAG","this is develop branch")
     }
 
-
-
 }
 
