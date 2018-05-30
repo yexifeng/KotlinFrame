@@ -19,6 +19,5 @@ class MainActivity{
     fun dev_featural3(){
         Log.e("LOG_TAG","meek finish action3")
     }
-
 }
 
