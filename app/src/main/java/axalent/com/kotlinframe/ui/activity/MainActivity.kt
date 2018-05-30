@@ -8,5 +8,8 @@ class MainActivity{
         Log.e("LOG_TAG","this is develop branch")
     }
 
+    fun dev_featural_action2(){
+        Log.e("LOG_TAG","franky finish acion2")
+    }
 }
 
