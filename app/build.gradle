@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+apply plugin:'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "axalent.com.kotlinframe"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled true
+    }
+
+    kapt{//处理databinding和kotlin冲突
+        generateStubs = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //kotlin
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    //databinding
+    kapt 'com.android.databinding:compiler:3.1.2'//kotlin注解处理依赖(为了适配Databinding)
+    //retrofit
+    compile 'com.facebook.stetho:stetho:1.3.1'//谷歌拦截器
+    compile 'com.facebook.stetho:stetho-okhttp3:1.3.1'//okhttp请求框架
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'//retrofit数据包装框架
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'//网络请求适配器
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'//网络数据解析器
+    compile 'com.trello:rxlifecycle:1.0'//bindlifecycle
+    compile 'com.trello:rxlifecycle-components:1.0'//RxAppCompat生命周期
+}
