@@ -4,8 +4,9 @@ import android.util.Log
 
 class MainActivity{
 
-    fun dev(){
+    fun feature_1Branch(){
         Log.e("LOG_TAG","this is develop branch")
     }
+
 }
 
