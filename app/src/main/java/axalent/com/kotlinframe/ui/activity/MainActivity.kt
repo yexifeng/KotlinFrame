@@ -7,6 +7,14 @@ class MainActivity{
 
 
     }
+    fun feature2(){
+
+
+    }
+    fun feature3(){
+
+
+    }
 
 }
 
